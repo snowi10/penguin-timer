@@ -25,7 +25,7 @@
     position: relative;
     bottom: 45px;
     z-index: 1;
-    filter: brightness(40%)
+    filter: brightness(40%);
 }
 
 #digits {
@@ -39,8 +39,8 @@
 
 #hour-penguin {
     position: absolute;
-    left: 32px;
-    bottom: 90px;
+    left: 33px;
+    bottom: 89px;
     height: 70px;
     width: 35px;
     z-index: 4;
@@ -54,24 +54,25 @@
 
 #minute-penguin {
     position: absolute;
-    left: 58px;
-    bottom: 100px;
-    width: 70px;
-    height: 30px;
+    left: 54px;
+    bottom: 110px;
+    width: 83px;
+    height: 37px;
     z-index: 4;
     background-color: transparent;
     border-radius: 50%;
+    transform: rotate(60deg);
     /*border: none;*/
     border-color: red;
     cursor: pointer;
 }
 
 #second-penguin {
-    position: relative;
-    left: 44%;
-    bottom: 123%;
-    width: 4%;
-    height: 19%;
+    position: absolute;
+    left: 126px;
+    bottom: 96px;
+    width: 34px;
+    height: 60px;
     z-index: 4;
     background-color: transparent;
     border-radius: 50%;
