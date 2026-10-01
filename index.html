@@ -2,7 +2,17 @@
     <html>
         <head>
             <link rel="stylesheet" href="styles.css"/>
+
             <meta charset="UTF-8"/>
+            <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+            />
+            <meta
+              http-equiv="X-Content-Security-Policy"
+              content="default-src 'self'; script-src 'self'"
+            />
+
             <title>Penguin Timer</title> 
         </head>
 
@@ -42,5 +52,5 @@
        </body>
 
        <!-- JavaScript file. -->
-        <script src="main.js"></script>
+        <script src="./renderer.js"></script>
     </html>

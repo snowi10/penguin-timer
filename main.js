@@ -1,16 +1,25 @@
-// TODO: Create a function to set a timer.
+const { app, BrowserWindow } = require('electron');
 
-// Sets the current time in the HTML document.
-function setTime(newTime) {
-    let date = document.getElementById('digits');
-    date.innerHTML = newTime; 
+const path = require('node:path');
+
+const createWindow = () => {
+    const win = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js')
+        }
+    });
+
+    win.loadFile('index.html');
 }
 
-// Gets the current time.
-function getTime() {
-    const date = new Date();
-    setTime(date.toLocaleTimeString("it-IT"));
-}
+app.whenReady().then(() => {
+    createWindow();
+});
 
-// Displays the current time every second.
-setInterval(getTime, 1000);
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
+});
