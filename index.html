@@ -5,21 +5,34 @@
             <meta charset="UTF-8"/>
             <title>Penguin Timer</title> 
         </head>
+
         <body>
+            <!-- The timer. -->
             <div id="timer">
+                <!-- The images used. -->
                 <img id ="penguin-img" src="assets/blue-penguins.png"/>
                 <img id ="clock-img" src="assets/clock-frame.png"/>
-                <p id="digits">00:00:00</p>
+
+                <!-- Displays the digital time. -->
+                <!-- Defaults to the current time. -->
+                <p id="digits"></p>
+
+                <!-- TODO: Work on implementing these. -->
+                <!-- Adjusts the hours. -->
                 <button 
                     id ="hour-penguin" 
                     type="button" 
                     onclick="alert('This is the hour penguin')">
                 </button>
+
+                <!-- Adjusts the minutes. -->
                 <button 
                     id ="minute-penguin" 
                     type="button" 
                     onclick="alert('This is the minute penguin')">
                 </button>
+
+                <!-- Adjusts the seconds. -->
                 <button
                     id="second-penguin"
                     type="button"
@@ -27,5 +40,7 @@
                 </button>
             </div>
        </body>
+
+       <!-- JavaScript file. -->
         <script src="main.js"></script>
     </html>
