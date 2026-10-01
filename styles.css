@@ -3,6 +3,14 @@
     src: url('assets/Technology-Bold.ttf');
 }
 
+body {
+    overflow: hidden;
+}
+
+button {
+    app-region: no-drag;
+}
+
 #timer {
     position: relative;
     margin-left: auto;
@@ -31,6 +39,7 @@
     bottom: 45px;
     z-index: 1;
     filter: brightness(40%);
+    app-region: drag;
 }
 
 #digits {
