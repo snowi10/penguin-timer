@@ -2,4 +2,4 @@
 A penguin-themed desktop timer for improving productivity.
 ## Progress
 - Displays the current time.
-- Working on adding functionality for setting a timer.
+- **Current:** Working on adding functionality for setting a timer.
